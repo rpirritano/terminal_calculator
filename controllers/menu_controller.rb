@@ -65,6 +65,11 @@ class MenuController
     puts "End of prior calculations"
   end
 
+  def delete_entry(entry)
+    calculator.entries.delete(entry)
+    puts "#{entry.entry} has been deleted"
+  end
+
   def entry_submenu(entry)
     puts "n - next entry"
     puts "d - delete entry"
@@ -75,6 +80,7 @@ class MenuController
     case selection
     when "n"
     when "d"
+      delete_entry(entry)
     when "m"
       system "clear"
       main_menu
