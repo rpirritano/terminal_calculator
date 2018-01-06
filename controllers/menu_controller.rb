@@ -67,7 +67,7 @@ class MenuController
 
   def delete_entry(entry)
     calculator.entries.delete(entry)
-    puts "#{entry.entry} has been deleted"
+    puts "#{entry.addition} has been deleted"
   end
 
   def entry_submenu(entry)

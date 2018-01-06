@@ -14,7 +14,4 @@ class Entry
   def to_s
     "Addition: #{addition}\nSubtraction: #{subtraction}\nMultiplication: #{multiplication}\nDivision: #{division}"
   end
-
-
-
 end
